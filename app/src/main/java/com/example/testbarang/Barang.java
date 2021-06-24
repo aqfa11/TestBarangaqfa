@@ -3,7 +3,7 @@ package com.example.testbarang;
 import java.io.Serializable;
 
 public class Barang implements Serializable {
-    private String kode,nama;
+    private String kode,nama,id;
 
     public Barang(){}
 
@@ -25,11 +25,18 @@ public class Barang implements Serializable {
 
     @Override
     public String toString() {
-        return " " + kode + '\n' + " " + nama;
+        return "Barang{" +
+                ", nama='" + nama + '\n'+
+                ", kode='" + kode + '\n' +
+                "id='" + id + '\n' +
+                '}';
     }
 
     public Barang(String kd,String nm){
         kode = kd;
         nama = nm;
     }
+
+    public String getId(){return id;}
+    public void setId(String id){this.id = id;}
 }

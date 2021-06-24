@@ -55,7 +55,7 @@ public class LihatBarang extends AppCompatActivity {
                      * untuk keperluan Edit dan Delete data
                      */
                     Barang barang = noteDataSnapshot.getValue(Barang.class);
-                    barang.setKode(noteDataSnapshot.getKey());
+                    barang.setId(noteDataSnapshot.getKey());
                     /**
                      * Menambahkan object Barang yang sudah dimapping
                      * ke dalam ArrayList
